@@ -5,6 +5,7 @@ import AboutHome from "./section/AboutHome";
 import WhoHome from "./section/WhoHome";
 import CustomerHome from "./section/CustomerHome";
 import VisionMission from "./section/VisionMission";
+import ServicesProducts from "./section/ServicesProducts";
 
 const Home = () => {
   return (
@@ -12,10 +13,10 @@ const Home = () => {
       <HeroHome />
       <AboutHome />
       <ServiceHome /> 
-      
+      <VisionMission />
         <WhoHome />
+        <ServicesProducts/>
         
-        <VisionMission />
         <CustomerHome />
     </div>
   );

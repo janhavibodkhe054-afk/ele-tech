@@ -37,6 +37,7 @@ import RainWater from "./pages/Services/RainWater";
 import Domestic from "./pages/Services/Domestic";
 import Drainage from "./pages/Services/Drainage";
 import Sanitary from "./pages/Services/Sanitary";
+import FloatingContact from "./componenets/FloatingContact";
 
 function App() {
   useEffect(() => {
@@ -44,7 +45,16 @@ function App() {
       duration: 1000, // animation speed
       once: true, // animation runs only once
       easing: "ease-in-out",
-      offset: 80, // start animation earlier 
+      offset: 80, // start animation earlier
+    });
+  }, []);
+
+   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+      offset: 80,
     });
   }, []);
 
@@ -78,39 +88,46 @@ function App() {
           element={<SpareParts />}
         />
 
-        <Route path="/commercial-electrical-installation" element={<Commercial />} />
-        <Route path="/industrial-electrical-installation" element={<Industrial />} />
-        <Route path="/farmhouse-electrical-installation" element={<Farmhouse />} />
-        <Route path="/electrical-turnkey-projects" element={<ElectricalTurnkey />} />
+        <Route
+          path="/commercial-electrical-installation"
+          element={<Commercial />}
+        />
+        <Route
+          path="/industrial-electrical-installation"
+          element={<Industrial />}
+        />
+        <Route
+          path="/farmhouse-electrical-installation"
+          element={<Farmhouse />}
+        />
+        <Route
+          path="/electrical-turnkey-projects"
+          element={<ElectricalTurnkey />}
+        />
         <Route path="/ht-lt-cable-laying" element={<Htlt />} />
         <Route path="/solar-system-installation" element={<Solar />} />
         <Route path="/lighting-contractors" element={<Lighting />} />
-        <Route path="/commercial-electrical-works" element={<CommercialWork />} />
+        <Route
+          path="/commercial-electrical-works"
+          element={<CommercialWork />}
+        />
         <Route path="/residential-electrical-work" element={<Residential />} />
-
-
-
-
-
 
         <Route path="/home-automation" element={<HomeAutomation />} />
         <Route path="/telephone-data-system" element={<Telephone />} />
         <Route path="/public-address-system" element={<PublicAdrress />} />
         <Route path="/fire-alarm-system" element={<FireAlarm />} />
-        
-        <Route path="/security-system" element={<Security/>} />
+
+        <Route path="/security-system" element={<Security />} />
         <Route path="/cctv-system" element={<Cctv />} />
-
-
 
         <Route path="/stp" element={<Stp />} />
         <Route path="/rain-water-system" element={<RainWater />} />
         <Route path="/domestic-water-supply" element={<Domestic />} />
-        <Route path="/drainage-systems" element={<Drainage/>} />
+        <Route path="/drainage-systems" element={<Drainage />} />
         <Route path="/sanitary-fixtures-installation" element={<Sanitary />} />
-        
       </Routes>
-
+<FloatingContact />
       <Footer />
     </Router>
   );

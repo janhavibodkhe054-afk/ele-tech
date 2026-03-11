@@ -37,7 +37,7 @@ const Stp = () => {
           <div className="lg:col-span-2">
 
             <img
-              src="stp2.webp"
+              src="/stp2.webp"
               alt="Sewage Treatment Plant"
               className="w-full rounded-lg mb-8 h-[450px]"
             />

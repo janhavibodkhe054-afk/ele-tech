@@ -1,104 +1,127 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
 import "aos/dist/aos.css";
-import { useNavigate } from "react-router-dom";
+import { ChevronDown, ArrowRight } from "lucide-react";
 
 const services = [
   {
     title: "Mechanical Utility Piping Services",
-    image: "/1service.webp",
+    desc: "We provide end-to-end mechanical piping solutions including installation, maintenance, and optimization of industrial piping networks for utilities such as water, air, and gas systems.",
   },
   {
     title: "Electrical & IT Infrastructure Services",
-    image: "/2service.jpg",
+    desc: "Our team delivers reliable electrical and IT infrastructure including wiring systems, panels, power distribution, networking, and industrial automation support.",
   },
   {
     title:
-      "Industrial Loadmatic Conveyor / Robots / Machine Assembly Line Installation & Commissioning",
-    image: "/3service.png",
+      "Industrial Loadmatic Conveyor / Machine Assembly Line Installation & Commissioning",
+    desc: "We specialize in installing and commissioning conveyor systems, robotic automation, and machine assembly lines to improve production efficiency.",
   },
   {
     title: "Industrial Spare Parts – Procurement & Supply",
-    image: "/4service.webp",
+    desc: "We ensure quick procurement and supply of industrial spare parts, components, and equipment to maintain smooth operations and reduce downtime.",
   },
 ];
 
-const ServiceHome = () => {
-  const navigate = useNavigate();
-  
-    const handleServices = () => {
-      navigate("/services");
-    };
+export default function WhatWeDo() {
+  const [active, setActive] = useState(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
+  const toggle = (index) => {
+    setActive(active === index ? null : index);
+  };
+
   return (
-    <>
-      <section className="bg-gray-100 py-16 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+    <section className="bg-gray-100 py-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-          {/* Heading */}
-          <div
-            className="flex flex-col sm:flex-row items-center justify-center mb-12 gap-4 sm:gap-6"
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            <div className="h-[2px] w-16 sm:w-24 bg-gray-300"></div>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 relative">
-              Our Services
-              <span
-                className="absolute left-1/2 -bottom-2 w-[60px] h-[3px] bg-orange-500 -translate-x-1/2"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              ></span>
+          {/* LEFT CONTENT */}
+          <div data-aos="fade-right">
+
+            <p className="text-orange-500 font-semibold tracking-widest mb-3 flex items-center gap-2">
+              💡 WHAT WE DO
+            </p>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              - Solutions <span className="text-orange-500">We Provide</span>
             </h2>
 
-            <div className="h-[2px] w-16 sm:w-24 bg-gray-300"></div>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Ele-Tech delivers advanced industrial engineering solutions
+              designed to support modern manufacturing and infrastructure
+              development. With years of experience in electrical,
+              mechanical, and automation services, we help industries
+              achieve efficiency, reliability, and long-term performance.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Our expertise includes industrial installation, electrical
+              infrastructure development, robotic automation integration,
+              and utility piping systems. We work closely with clients
+              to provide customized solutions tailored to their operational
+              requirements.
+            </p>
+
+            
+
           </div>
 
-          {/* Service Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {/* RIGHT ACCORDION */}
+          <div data-aos="fade-left" className="space-y-5">
+
             {services.map((service, index) => (
               <div
                 key={index}
-                data-aos="fade-up"
-                data-aos-delay={index * 150}
-                data-aos-duration="800"
-                className="bg-white rounded-lg shadow-md overflow-hidden transition duration-500 hover:shadow-2xl flex flex-col"
+                className="bg-white rounded-xl shadow-md overflow-hidden"
               >
-                {/* Image */}
-                <div className="h-48 sm:h-56 md:h-48 lg:h-44 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover transition duration-700 hover:scale-110"
-                  />
-                </div>
 
-                {/* Title */}
-                <div className="p-5 text-center flex-1 flex items-center justify-center">
-                  <h3 className="font-semibold text-gray-800 text-sm sm:text-base md:text-base lg:text-base">
-                    {service.title}
-                  </h3>
-                </div>
+                {/* HEADER */}
+                <button
+                  onClick={() => toggle(index)}
+                  className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition"
+                >
+                  <div className="flex items-center gap-4">
+
+                    <div className="bg-orange-500 text-white p-3 rounded-lg">
+                      <ArrowRight size={18} />
+                    </div>
+
+                    <h3 className="font-semibold text-gray-800 text-sm md:text-base">
+                      {service.title}
+                    </h3>
+
+                  </div>
+
+                  {/* SAME ICON FOR ALL */}
+                  <ChevronDown size={20} className="text-gray-500" />
+                </button>
+
+                {/* CONTENT */}
+                {active === index && (
+                  <div
+                    data-aos="fade-down"
+                    className="px-6 pb-6 text-gray-600 text-sm leading-relaxed"
+                  >
+                    {service.desc}
+                  </div>
+                )}
+
               </div>
             ))}
+
           </div>
 
-          {/* Button */}
-          <div
-            className="text-center mt-10"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="900"
-          >
-            <button
-             onClick={handleServices}
-             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-semibold shadow-md transition duration-300 hover:scale-105 hover:shadow-xl">
-              Learn More
-            </button>
-          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
-};
-
-export default ServiceHome;
+}
