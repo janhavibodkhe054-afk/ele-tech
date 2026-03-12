@@ -16,7 +16,6 @@ const services = [
   { name: "Commercial Electrical Works", link: "/commercial-electrical-works", image: "/elect2.jpg" },
   { name: "Residential Electrical Work", link: "/residential-electrical-work", image: "/resident2.webp" },
   { name: "Home Automation", link: "/home-automation", image: "/automation2.webp" },
-
   { name: "Telephone / Data system", link: "/telephone-data-system", image: "/phone2.jpg" },
   { name: "Public address system", link: "/public-address-system", image: "/public1.jpg" },
   { name: "Fire alarm system", link: "/fire-alarm-system", image: "/fire2.jpg" },
@@ -32,7 +31,6 @@ const services = [
 export default function ServicesProducts() {
   const navigate = useNavigate();
 
-  // Split services into chunks of 10
   const chunkSize = 10;
   const slides = [];
   for (let i = 0; i < services.length; i += chunkSize) {
@@ -40,13 +38,16 @@ export default function ServicesProducts() {
   }
 
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+    <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+
+        {/* HEADING */}
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
             Our Services & <span className="text-orange-500">Products</span>
           </h2>
-          <p className="text-orange-500 mt-3 font-semibold tracking-widest">
+
+          <p className="text-orange-500 mt-3 font-semibold tracking-widest text-xs sm:text-sm md:text-base">
             💡 ( MECHANICAL, ELECTRICAL & PLUMBING )
           </p>
         </div>
@@ -54,35 +55,48 @@ export default function ServicesProducts() {
         {/* SLIDER */}
         <Swiper
           modules={[Autoplay]}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 4500, disableOnInteraction: false }}
           loop={true}
-          spaceBetween={40}
+          spaceBetween={20}
         >
           {slides.map((slideServices, index) => (
             <SwiperSlide key={index}>
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-6">
+
+              {/* GRID */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5 lg:gap-6">
+
                 {slideServices.map((service, i) => (
                   <div
                     key={i}
                     onClick={() => navigate(service.link)}
-                    className="relative cursor-pointer group overflow-hidden rounded-md shadow-md"
+                    className="relative cursor-pointer group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-500"
                   >
+
+                    {/* IMAGE */}
                     <img
                       src={service.image}
                       alt={service.name}
-                      className="w-full h-38 object-cover group-hover:scale-110 transition duration-500"
+                      className="w-full h-28 sm:h-32 md:h-36 lg:h-40 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-black/20 flex items-end justify-center p-2">
-                      <h3 className="text-white text-xs md:text-sm font-semibold text-center">
+
+                    {/* OVERLAY */}
+                    <div className="absolute inset-0 bg-black/40 flex items-end justify-center p-2 sm:p-3">
+
+                      <h3 className="text-white text-[11px] sm:text-xs md:text-sm font-semibold text-center leading-tight line-clamp-2">
                         {service.name}
                       </h3>
+
                     </div>
+
                   </div>
                 ))}
+
               </div>
+
             </SwiperSlide>
           ))}
         </Swiper>
+
       </div>
     </section>
   );

@@ -15,3 +15,16 @@
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+
+/* Prevent horizontal page scroll */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure React root also stays inside viewport */
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}

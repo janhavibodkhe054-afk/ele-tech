@@ -62,7 +62,7 @@ export default function Navbar() {
       { name: "Telephone / Data system", link: "/telephone-data-system" },
       { name: "Public address system", link: "/public-address-system" },
       { name: "Fire alarm system", link: "/fire-alarm-system" },
-     
+
       { name: "Security system", link: "/security-system" },
       { name: "CCTV system", link: "/cctv-system" },
     ],
@@ -89,6 +89,7 @@ export default function Navbar() {
 
   return (
     <>
+    <div className="fixed top-0 left-0 w-full z-50">
       {/* ===== Top Header ===== */}
       <div className="hidden md:flex justify-between items-center px-6 lg:px-10 py-2 bg-blue-900 text-white text-sm">
         <div className="flex items-center gap-6">
@@ -108,10 +109,9 @@ export default function Navbar() {
           <a href="mailto:info@ele-tech.com">info@ele-tech.com</a>
         </div>
       </div>
-
       {/* ===== Navbar ===== */}
-      <nav className="w-full sticky top-0 z-50 bg-white shadow-md">
-        <div className="flex items-center justify-between py-4 px-4 md:px-10">
+      <nav className="w-full bg-white shadow-md">
+      <div className="flex items-center justify-between py-4 px-4 md:px-10">
           {/* Logo */}
           <Link to="/">
             <img src="/logo.jpeg" className="h-12 sm:h-14" />
@@ -248,18 +248,29 @@ export default function Navbar() {
         </div>
 
         {/* ===== MOBILE MENU ===== */}
-        {/* ===== MOBILE MENU ===== */}
 
         {isOpen && (
           <div className="md:hidden bg-white px-6 py-6 space-y-4">
-            <Link to="/" onClick={() => setIsOpen(false)} className="block">
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className={`block ${
+                location.pathname === "/"
+                  ? "text-orange-500 font-semibold"
+                  : "text-gray-700"
+              }`}
+            >
               Home
             </Link>
 
             <Link
               to="/about"
               onClick={() => setIsOpen(false)}
-              className="block"
+              className={`block ${
+                location.pathname === "/about"
+                  ? "text-orange-500 font-semibold"
+                  : "text-gray-700"
+              }`}
             >
               About
             </Link>
@@ -269,7 +280,7 @@ export default function Navbar() {
             <div>
               <button
                 onClick={toggleServices}
-                className="flex items-center justify-between w-full font-semibold text-orange-500"
+                className="flex items-center justify-between w-full font-semibold text-gray-700"
               >
                 Services
                 <ChevronDown size={18} />
@@ -278,7 +289,6 @@ export default function Navbar() {
               {serviceOpen && (
                 <div className="mt-3 space-y-3">
                   {/* GENERAL ELECTRICAL */}
-
                   <div>
                     <button
                       onClick={() => toggleCategory("general")}
@@ -295,7 +305,11 @@ export default function Navbar() {
                             key={i}
                             to={item.link}
                             onClick={() => setIsOpen(false)}
-                            className="block text-sm text-gray-600"
+                            className={`block text-sm ${
+                              location.pathname === item.link
+                                ? "text-orange-500 font-semibold"
+                                : "text-gray-600"
+                            }`}
                           >
                             {item.name}
                           </Link>
@@ -305,7 +319,6 @@ export default function Navbar() {
                   </div>
 
                   {/* ELECTRICAL */}
-
                   <div>
                     <button
                       onClick={() => toggleCategory("electrical")}
@@ -322,7 +335,11 @@ export default function Navbar() {
                             key={i}
                             to={item.link}
                             onClick={() => setIsOpen(false)}
-                            className="block text-sm text-gray-600"
+                            className={`block text-sm ${
+                              location.pathname === item.link
+                                ? "text-orange-500 font-semibold"
+                                : "text-gray-600"
+                            }`}
                           >
                             {item.name}
                           </Link>
@@ -332,7 +349,6 @@ export default function Navbar() {
                   </div>
 
                   {/* PLUMBING */}
-
                   <div>
                     <button
                       onClick={() => toggleCategory("plumbing")}
@@ -349,7 +365,11 @@ export default function Navbar() {
                             key={i}
                             to={item.link}
                             onClick={() => setIsOpen(false)}
-                            className="block text-sm text-gray-600"
+                            className={`block text-sm ${
+                              location.pathname === item.link
+                                ? "text-orange-500 font-semibold"
+                                : "text-gray-600"
+                            }`}
                           >
                             {item.name}
                           </Link>
@@ -364,7 +384,11 @@ export default function Navbar() {
             <Link
               to="/industries"
               onClick={() => setIsOpen(false)}
-              className="block"
+              className={`block ${
+                location.pathname === "/industries"
+                  ? "text-orange-500 font-semibold"
+                  : "text-gray-700"
+              }`}
             >
               Industries
             </Link>
@@ -372,7 +396,11 @@ export default function Navbar() {
             <Link
               to="/client"
               onClick={() => setIsOpen(false)}
-              className="block"
+              className={`block ${
+                location.pathname === "/client"
+                  ? "text-orange-500 font-semibold"
+                  : "text-gray-700"
+              }`}
             >
               Our Client
             </Link>
@@ -380,7 +408,11 @@ export default function Navbar() {
             <Link
               to="/career"
               onClick={() => setIsOpen(false)}
-              className="block"
+              className={`block ${
+                location.pathname === "/career"
+                  ? "text-orange-500 font-semibold"
+                  : "text-gray-700"
+              }`}
             >
               Career
             </Link>
@@ -388,13 +420,18 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="block"
+              className={`block ${
+                location.pathname === "/contact"
+                  ? "text-orange-500 font-semibold"
+                  : "text-gray-700"
+              }`}
             >
               Contact
             </Link>
           </div>
         )}
       </nav>
+      </div>
     </>
   );
 }

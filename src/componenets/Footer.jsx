@@ -29,16 +29,14 @@ const Footer = () => {
 
       {/* ===== MAIN FOOTER ===== */}
       <div className="bg-blue-950 text-gray-300">
-        <div
-          className="max-w-7xl mx-auto px-6 py-16 grid gap-12
-                        grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
-        >
+        <div className="max-w-7xl mx-auto px-6 py-16 grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+
           {/* COMPANY INFO */}
           <div className="text-center sm:text-left">
-            <h2 className="text-white text-3xl font-bold mb-4 tracking-wide">
+            <h2 className="text-white text-2xl sm:text-3xl font-bold mb-4 tracking-wide">
               ELE-TECH
             </h2>
-            <p className="text-sm leading-relaxed max-w-sm mx-auto sm:mx-0">
+            <p className="text-sm sm:text-base leading-relaxed max-w-sm mx-auto sm:mx-0">
               Delivering innovative mechanical, electrical and industrial
               engineering solutions with strong focus on quality, safety and
               timely execution.
@@ -69,11 +67,11 @@ const Footer = () => {
 
           {/* QUICK LINKS */}
           <div className="text-center sm:text-left">
-            <h3 className="text-white font-semibold mb-5 relative inline-block">
+            <h3 className="text-white font-semibold mb-5 relative inline-block text-lg">
               Quick Links
               <span className="absolute -bottom-2 left-0 w-10 h-1 bg-orange-500"></span>
             </h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm sm:text-base">
               <li>
                 <Link to="/" className="hover:text-orange-400 transition">
                   Home
@@ -90,36 +88,22 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/services"
-                  className="hover:text-orange-400 transition"
-                >
+                <Link to="/services" className="hover:text-orange-400 transition">
                   Services
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/industries"
-                  className="hover:text-orange-400 transition"
-                >
+                <Link to="/industries" className="hover:text-orange-400 transition">
                   Industries
                 </Link>
-                
               </li>
               <li>
-                <Link
-                  to="/client"
-                  className="hover:text-orange-400 transition"
-                >
+                <Link to="/client" className="hover:text-orange-400 transition">
                   Our Client
                 </Link>
-                
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-orange-400 transition"
-                >
+                <Link to="/contact" className="hover:text-orange-400 transition">
                   Contact
                 </Link>
               </li>
@@ -127,14 +111,12 @@ const Footer = () => {
           </div>
 
           {/* SERVICES */}
-          {/* SERVICES */}
           <div className="text-center sm:text-left">
-            <h3 className="text-white font-semibold mb-5 relative inline-block">
+            <h3 className="text-white font-semibold mb-5 relative inline-block text-lg">
               Our Services
               <span className="absolute -bottom-2 left-0 w-10 h-1 bg-orange-500"></span>
             </h3>
-
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm sm:text-base">
               <li>
                 <Link
                   to="/services/mechanical-utility-piping"
@@ -143,7 +125,6 @@ const Footer = () => {
                   Mechanical Utility Piping
                 </Link>
               </li>
-
               <li>
                 <Link
                   to="/services/electrical-it-infrastructure"
@@ -152,7 +133,6 @@ const Footer = () => {
                   Electrical & IT Infrastructure
                 </Link>
               </li>
-
               <li>
                 <Link
                   to="/services/assembly-line-installation"
@@ -161,7 +141,6 @@ const Footer = () => {
                   Automation & Assembly Lines
                 </Link>
               </li>
-
               <li>
                 <Link
                   to="/services/spare-parts-procurement"
@@ -175,12 +154,11 @@ const Footer = () => {
 
           {/* CONTACT INFO */}
           <div className="text-center sm:text-left">
-            <h3 className="text-white font-semibold mb-5 relative inline-block">
+            <h3 className="text-white font-semibold mb-5 relative inline-block text-lg">
               Contact Info
               <span className="absolute -bottom-2 left-0 w-10 h-1 bg-orange-500"></span>
             </h3>
-
-            <div className="space-y-4 text-sm">
+            <div className="space-y-4 text-sm sm:text-base">
               <p className="flex items-center justify-center sm:justify-start gap-3">
                 <FaMapMarkerAlt className="text-orange-400" />
                 Pune, Maharashtra, India
@@ -195,14 +173,14 @@ const Footer = () => {
               </p>
             </div>
           </div>
+
         </div>
 
         {/* ===== BOTTOM BAR ===== */}
         <div className="border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 py-5 text-center">
-            <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} ELE-TECH Engineering Solutions. All
-              Rights Reserved.
+            <p className="text-sm sm:text-base text-gray-400">
+              © {new Date().getFullYear()} ELE-TECH Engineering Solutions. All Rights Reserved.
             </p>
           </div>
         </div>

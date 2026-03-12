@@ -12,109 +12,82 @@ const Customers = () => {
   ];
 
   return (
-    <>
-      <section className="py-16 sm:py-20 lg:py-24 overflow-hidden bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 text-center animate-[fadeUp_1s_ease-out]">
+    <section className="py-12 sm:py-16 lg:py-20 overflow-hidden bg-gray-50">
 
-          {/* Heading */}
-          <p className="uppercase tracking-[4px] text-orange-500 font-semibold mb-3 text-sm sm:text-base">
-            Our Clients
-          </p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
-            Trusted Electro Mechanical & Industrial Clients
-          </h2>
+        {/* HEADING */}
+        <p className="uppercase tracking-[3px] sm:tracking-[4px] text-orange-500 font-semibold mb-2 text-xs sm:text-sm">
+          Our Clients
+        </p>
 
-          <div className="w-16 sm:w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+          Trusted Electro Mechanical & Industrial Clients
+        </h2>
 
-          <p className="text-gray-600 mt-5 max-w-3xl mx-auto text-sm sm:text-base md:text-lg">
-            Delivering reliable electro mechanical, industrial electrical,
-            and mechanical solutions to leading organizations.
-          </p>
+        <div className="w-12 sm:w-16 h-1 bg-orange-500 mx-auto mt-3 rounded-full"></div>
 
-          {/* GRID */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 mt-10 sm:mt-16">
+        <p className="text-gray-600 mt-4 max-w-3xl mx-auto text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed">
+          Delivering reliable electro mechanical, industrial electrical,
+          and mechanical solutions to leading organizations.
+        </p>
 
-            {customers.map((client, index) => (
-              <div
-                key={client.id}
-                className={`animate-[cardReveal_0.8s_ease-out]`}
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                <LogoCard logo={client.logo} />
-              </div>
-            ))}
+        {/* CLIENT GRID */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 sm:gap-6 mt-10 sm:mt-14">
 
-          </div>
+          {customers.map((client, index) => (
+            <div
+              key={client.id}
+              className="animate-[cardReveal_0.8s_ease-out]"
+              style={{ animationDelay: `${index * 0.15}s` }}
+            >
+              <LogoCard logo={client.logo} />
+            </div>
+          ))}
+
         </div>
-      </section>
+
+      </div>
 
       {/* ANIMATIONS */}
       <style>
         {`
-          @keyframes fadeUp {
-            from {
-              opacity: 0;
-              transform: translateY(40px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
           @keyframes cardReveal {
-            from {
-              opacity: 0;
-              transform: translateY(60px) scale(0.95);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0) scale(1);
-            }
+            from { opacity: 0; transform: translateY(50px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
           }
 
           @keyframes floatCard {
-            0%,100% {
-              transform: translateY(0px);
-            }
-            50% {
-              transform: translateY(-8px);
-            }
-          }
-
-          @keyframes logoZoom {
-            from {
-              transform: scale(0.9);
-              opacity: 0.6;
-            }
-            to {
-              transform: scale(1);
-              opacity: 1;
-            }
+            0%,100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
           }
         `}
       </style>
-    </>
+
+    </section>
   );
 };
 
 const LogoCard = ({ logo }) => (
   <div
     className="
-      h-28 sm:h-32 md:h-36 lg:h-40 rounded-2xl border border-gray-100
-      shadow-md hover:shadow-2xl
+      h-20 sm:h-24 md:h-28 lg:h-32
+      rounded-xl border border-gray-100
+      shadow-md hover:shadow-xl
       transition duration-500
-      flex items-center justify-center p-4 sm:p-6
-      bg-white
+      flex items-center justify-center
+      bg-white p-3 sm:p-4
+      hover:-translate-y-1
       animate-[floatCard_4s_ease-in-out_infinite]
-      hover:-translate-y-2
     "
   >
     <img
       src={logo}
       alt="client"
-      className="max-h-14 sm:max-h-16 md:max-h-20 lg:max-h-24 object-contain animate-[logoZoom_1.2s_ease-out]"
+      className="
+        max-h-10 sm:max-h-12 md:max-h-16 lg:max-h-18
+        w-auto object-contain
+      "
     />
   </div>
 );
