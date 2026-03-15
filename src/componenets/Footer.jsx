@@ -119,34 +119,34 @@ const Footer = () => {
             <ul className="space-y-3 text-sm sm:text-base">
               <li>
                 <Link
-                  to="/services/mechanical-utility-piping"
+                  to="/fire-fighting-system"
                   className="hover:text-orange-400 transition"
                 >
-                  Mechanical Utility Piping
+                  Mechanical
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/electrical-it-infrastructure"
+                  to="/commercial-electrical-installation"
                   className="hover:text-orange-400 transition"
                 >
-                  Electrical & IT Infrastructure
+                  General Electrical
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/assembly-line-installation"
+                  to="/home-automation"
                   className="hover:text-orange-400 transition"
                 >
-                  Automation & Assembly Lines
+                  Electrical
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/spare-parts-procurement"
+                  to="/stp"
                   className="hover:text-orange-400 transition"
                 >
-                  Industrial Spare Parts Supply
+                  Plumbing
                 </Link>
               </li>
             </ul>

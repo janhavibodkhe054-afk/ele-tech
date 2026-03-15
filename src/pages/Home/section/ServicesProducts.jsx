@@ -6,6 +6,15 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const services = [
+  // Mechanical Services
+  { name: "Fire Fighting System", link: "/fire-fighting-system", image: "/firefight1.png" },
+  { name: "Fire Hydrant System", link: "/fire-hydrant-system", image: "/firehydrant1.webp" },
+  { name: "Fire Suppression System", link: "/fire-suppression-system", image: "/supression2.jpg" },
+  { name: "Industrial Exhaust System", link: "/industrial-exhaust-system", image: "/exhaust2.jpg" },
+  { name: "Heating & Cooling System", link: "/heating-cooling-system", image: "/heat1.jpg" },
+  { name: "Building Management System", link: "/building-management-system", image: "/build2.jpg" },
+
+  // Electrical Services
   { name: "Commercial Electrical Installation", link: "/commercial-electrical-installation", image: "/commercial2.avif" },
   { name: "Industrial Electrical Installation", link: "/industrial-electrical-installation", image: "/industrial2.jpg" },
   { name: "Farmhouse Electrical Installation", link: "/farmhouse-electrical-installation", image: "/farmhouse1.jpg" },
@@ -21,6 +30,8 @@ const services = [
   { name: "Fire alarm system", link: "/fire-alarm-system", image: "/fire2.jpg" },
   { name: "Security system", link: "/security-system", image: "/security2.jpg" },
   { name: "CCTV system", link: "/cctv-system", image: "/cctv2.jpg" },
+
+  // Plumbing Services
   { name: "STP", link: "/stp", image: "/stp2.webp" },
   { name: "Rain Water system", link: "/rain-water-system", image: "/rain1.jpg" },
   { name: "Domestic water supply", link: "/domestic-water-supply", image: "/water1.webp" },
@@ -33,6 +44,7 @@ export default function ServicesProducts() {
 
   const chunkSize = 10;
   const slides = [];
+
   for (let i = 0; i < services.length; i += chunkSize) {
     slides.push(services.slice(i, i + chunkSize));
   }
@@ -76,6 +88,7 @@ export default function ServicesProducts() {
                     <img
                       src={service.image}
                       alt={service.name}
+                      onError={(e) => (e.target.src = "/default-service.jpg")}
                       className="w-full h-28 sm:h-32 md:h-36 lg:h-40 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
 

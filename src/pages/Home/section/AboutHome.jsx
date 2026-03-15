@@ -28,7 +28,7 @@ export default function AboutHome() {
 
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-xl">
               <img
-                src="https://detricaelectromechanical.com/assets/img/about/Electricalcontractor-noida.jpg"
+                src="/imageabout.webp"
                 alt="Electrical Engineering"
                 className="w-full h-[260px] sm:h-[360px] md:h-[420px] lg:h-[520px] object-cover hover:scale-105 transition duration-500"
               />
