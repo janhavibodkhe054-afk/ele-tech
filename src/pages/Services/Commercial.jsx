@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 const Commercial = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* ================= HERO BANNER ================= */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
+
         <img
           src="/commercial1.jpg"
           alt="Commercial Electrical"
@@ -16,11 +17,11 @@ const Commercial = () => {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative text-center text-white px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Commercial Electrical Installation
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +31,8 @@ const Commercial = () => {
       </section>
 
       {/* ================= MAIN CONTENT ================= */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* ================= LEFT CONTENT ================= */}
           <div className="lg:col-span-2">
@@ -40,90 +41,46 @@ const Commercial = () => {
             <img
               src="/commercial2.avif"
               alt="Electrical Panel"
-              className="rounded-lg mb-8 w-full h-[500px]"
+              className="rounded-lg mb-6 w-full h-[250px] md:h-[400px] object-cover"
             />
 
             {/* Title */}
-            <h2 className="text-3xl font-bold mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Commercial Electrical Installation
             </h2>
 
-            {/* Paragraph */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Commercial electrical installation refers to the complete setup of
-              electrical infrastructure in commercial facilities such as office
-              buildings, shopping complexes, hotels, hospitals, educational
-              institutions, and industrial units. These systems are designed to
-              support heavy electrical loads and ensure continuous power
-              distribution for lighting, HVAC systems, machinery, security
-              systems, and other operational equipment. A well-designed
-              electrical system ensures efficiency, safety, and long-term
-              reliability for commercial operations.
+            {/* Short Content */}
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Commercial electrical installation includes designing and
+              installing complete electrical systems for offices, malls,
+              hospitals, hotels, and other commercial buildings. These systems
+              ensure reliable power distribution for lighting, equipment,
+              security systems, and daily operations.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              The installation process begins with electrical planning and load
-              calculations. Engineers evaluate the power requirements of the
-              building and design a distribution system that includes
-              transformers, switchboards, panel boards, cable trays, conduits,
-              and circuit protection devices. Proper electrical design helps
-              avoid overloading, improves energy efficiency, and ensures
-              compliance with electrical safety standards and regulations.
-            </p>
-
-            {/* ================= HEADING ================= */}
-            <h3 className="text-2xl font-semibold mb-6">
-              Electrical System Planning & Infrastructure Setup
-            </h3>
-
-            {/* Small Height Image */}
-            
-
-            {/* More Info */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              During the installation phase, professional electricians install
-              electrical conduits, wiring systems, distribution panels, circuit
-              breakers, and grounding systems throughout the building. Cable
-              management systems such as cable trays and trunking are used to
-              organize and protect electrical wiring. These components ensure
-              safe transmission of electricity while preventing electrical
-              faults, short circuits, and overheating.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Commercial electrical installations also include advanced lighting
-              systems such as LED lighting, emergency lighting, and automated
-              lighting controls. These solutions improve energy efficiency while
-              ensuring proper illumination across office spaces, corridors,
-              warehouses, and outdoor areas. Modern commercial facilities often
-              integrate smart electrical systems that allow centralized control
-              and monitoring of power consumption.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Our team provides safe wiring solutions, panel installations,
+              cable management, and energy-efficient lighting systems to improve
+              performance and reduce electricity consumption.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Safety is one of the most critical aspects of commercial
-              electrical installation. Proper earthing systems, surge
-              protection devices, and circuit breakers are installed to protect
-              equipment and occupants from electrical hazards. After
-              installation, the entire system undergoes testing and inspection
-              to verify load distribution, voltage stability, and compliance
-              with electrical safety standards. A professionally installed
-              commercial electrical system ensures reliable power supply,
-              reduced energy wastage, and long-term operational stability for
-              businesses.
+              With proper safety standards, earthing systems, and testing
+              procedures, we ensure long-lasting electrical infrastructure that
+              supports smooth and uninterrupted business operations.
             </p>
 
           </div>
 
           {/* ================= RIGHT SIDEBAR ================= */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Services
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/commercial-electrical-installation" className="hover:text-orange-500">

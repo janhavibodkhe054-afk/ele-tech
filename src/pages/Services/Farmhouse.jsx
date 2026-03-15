@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const Farmhouse = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* ================= HERO BANNER ================= */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/farmhouse2.webp"
           alt="Farmhouse Electrical Installation"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-center text-white px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Farmhouse Electrical Installation
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const Farmhouse = () => {
       </section>
 
       {/* ================= MAIN CONTENT ================= */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* ================= LEFT CONTENT ================= */}
           <div className="lg:col-span-2">
@@ -40,87 +40,45 @@ const Farmhouse = () => {
             <img
               src="/farmhouse1.jpg"
               alt="Farmhouse Electrical Work"
-              className="rounded-lg mb-8 w-full h-[400px]"
+              className="rounded-lg mb-6 w-full h-[250px] md:h-[400px] object-cover"
             />
 
             {/* Title */}
-            <h2 className="text-3xl font-bold mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Farmhouse Electrical Installation
             </h2>
 
-            {/* Paragraphs */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Farmhouse electrical installation involves designing and
-              installing reliable electrical systems for farmhouses, rural
-              properties, agricultural land, and countryside residences.
-              Unlike urban residential properties, farmhouse electrical
-              systems must support larger outdoor areas, water pumps,
-              irrigation equipment, security lighting, and sometimes
-              agricultural machinery. Proper electrical planning ensures safe
-              power distribution across indoor and outdoor areas of the
-              farmhouse property.
+            {/* Short Content */}
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Farmhouse electrical installation includes designing safe and
+              reliable electrical systems for rural homes and agricultural
+              properties. These systems power lighting, appliances, irrigation
+              pumps, and outdoor equipment across large farmhouse areas.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              A well-designed farmhouse electrical system includes power
-              supply for lighting, appliances, water pumping systems, garden
-              lighting, and outdoor electrical outlets. Electricians install
-              distribution boards, wiring networks, switches, and circuit
-              protection devices to ensure efficient electricity flow. Since
-              many farmhouses are located in remote areas, it is also common
-              to integrate backup power systems such as generators or solar
-              power solutions to maintain continuous electricity supply.
-            </p>
-
-            {/* ================= HEADING ================= */}
-            <h3 className="text-2xl font-semibold mb-6">
-              Outdoor Electrical Systems & Energy Solutions
-            </h3>
-
-           
-            {/* More Info */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Farmhouse installations often require extensive outdoor
-              electrical infrastructure. Electricians install weatherproof
-              wiring systems, underground cables, garden lighting, and
-              electrical connections for outdoor equipment. Special care is
-              taken to protect wiring from environmental factors such as rain,
-              moisture, and dust. Proper grounding systems are also installed
-              to ensure electrical safety in open rural environments.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              In many modern farmhouses, energy-efficient solutions such as
-              solar panels and LED lighting are integrated into the electrical
-              system. Solar systems can provide sustainable electricity for
-              lighting, irrigation pumps, and other farm operations. These
-              systems help reduce energy costs while ensuring reliable power
-              supply in areas where grid electricity may be limited.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Our team installs wiring networks, distribution boards,
+              weatherproof outdoor connections, and efficient lighting systems
+              to ensure smooth power supply throughout the property.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Safety and durability are essential for farmhouse electrical
-              installations. Proper circuit breakers, surge protection, and
-              grounding systems are installed to prevent electrical faults
-              and protect appliances and equipment. After installation,
-              electricians conduct testing and inspections to ensure that
-              the electrical system operates safely and efficiently across
-              the entire farmhouse property. A professionally installed
-              electrical system ensures comfort, safety, and reliable power
-              for both residential living and agricultural activities.
+              We also provide energy-efficient solutions like solar systems and
+              proper grounding to ensure safety, durability, and reliable
+              electricity for both residential comfort and agricultural use.
             </p>
 
           </div>
 
           {/* ================= RIGHT SIDEBAR ================= */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Services
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/commercial-electrical-installation" className="hover:text-orange-500">

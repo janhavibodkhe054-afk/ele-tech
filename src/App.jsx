@@ -44,6 +44,12 @@ import RainWater from "./pages/Services/RainWater";
 import Domestic from "./pages/Services/Domestic";
 import Drainage from "./pages/Services/Drainage";
 import Sanitary from "./pages/Services/Sanitary";
+import FireFighting from "./pages/Services/FireFighting";
+import FireHydrant from "./pages/Services/FireHydrant";
+import FireSuppression from "./pages/Services/FireSuppression";
+import IndustrialExhaust from "./pages/Services/IndustrialExhaust";
+import HeatingCooling from "./pages/Services/HeatingCooling";
+import BuildingManagement from "./pages/Services/BuildingManagement";
 
 function App() {
 
@@ -105,6 +111,14 @@ function App() {
           <Route path="/domestic-water-supply" element={<Domestic />} />
           <Route path="/drainage-systems" element={<Drainage />} />
           <Route path="/sanitary-fixtures-installation" element={<Sanitary />} />
+
+
+          <Route path="/fire-fighting-system" element={<FireFighting />} />
+          <Route path="/fire-hydrant-system" element={<FireHydrant />} />
+          <Route path="/fire-suppression-system" element={<FireSuppression />} />
+          <Route path="/industrial-exhaust-system" element={<IndustrialExhaust />} />
+          <Route path="/heating-cooling-system" element={<HeatingCooling />} />
+          <Route path="/building-management-system" element={<BuildingManagement />} />
         </Routes>
 
       </main>

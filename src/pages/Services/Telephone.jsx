@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const Telephone = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/phone1.webp"
           alt="Telephone Data System"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-white text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Telephone / Data System
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const Telephone = () => {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2">
@@ -39,77 +39,43 @@ const Telephone = () => {
             <img
               src="/phone2.jpg"
               alt="Telephone Data Cabling"
-              className="w-full rounded-lg mb-8 h-[450px]"
+              className="w-full rounded-lg mb-6 h-[250px] md:h-[380px] object-cover"
             />
 
-            <h2 className="text-3xl font-bold mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Telephone & Data Communication Systems
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Telephone and data systems are essential components of modern
-              residential, commercial, and industrial buildings. These
-              systems enable seamless communication through voice calls,
-              internet connectivity, and digital data transfer. Proper
-              installation of telephone and data networks ensures reliable
-              communication, faster connectivity, and efficient information
-              sharing within an organization or home environment.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Telephone and data systems provide reliable communication
+              and internet connectivity for homes, offices, and
+              commercial buildings. These systems support voice calls,
+              networking, and digital data transfer.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              Professional installation involves structured cabling
-              systems, network racks, switches, routers, and data outlets.
-              High-quality cables such as Cat6, Cat6A, or fiber optic
-              cables are used to provide stable internet and communication
-              connections. Structured data cabling allows easy management
-              of network infrastructure and supports future upgrades as
-              technology evolves.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-6">
-              Reliable Network & Communication Infrastructure
-            </h3>
-
-           
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Telephone and data systems include structured cabling,
-              network switches, patch panels, communication racks, and
-              internet distribution points. These systems are designed to
-              support multiple devices such as computers, IP phones,
-              printers, and security systems while maintaining high-speed
-              connectivity and minimal signal loss.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              In modern offices and smart homes, data systems also support
-              integrated technologies such as CCTV surveillance, smart
-              automation systems, and cloud-based communication platforms.
-              Properly designed infrastructure ensures smooth operation of
-              these technologies while maintaining secure and reliable
-              communication networks.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Our services include structured cabling, network
+              installation, data outlets, switches, and communication
+              racks to ensure stable and high-speed connectivity.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              A professionally installed telephone and data system
-              improves communication efficiency, enhances productivity,
-              and ensures stable internet connectivity for daily
-              operations. With the right infrastructure in place,
-              businesses and homeowners can easily expand their network
-              capacity as their technology requirements grow.
+              A properly designed communication network improves
+              productivity, ensures secure data transfer, and allows
+              easy expansion as technology and connectivity needs grow.
             </p>
 
           </div>
 
           {/* SIDEBAR */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Systems
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/home-automation" className="hover:text-orange-500">

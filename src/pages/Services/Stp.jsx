@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const Stp = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/stp1.webp"
           alt="STP System"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-white text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             STP (Sewage Treatment Plant)
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const Stp = () => {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2">
@@ -39,75 +39,43 @@ const Stp = () => {
             <img
               src="/stp2.webp"
               alt="Sewage Treatment Plant"
-              className="w-full rounded-lg mb-8 h-[450px]"
+              className="w-full rounded-lg mb-6 h-[250px] md:h-[380px] object-cover"
             />
 
-            <h2 className="text-3xl font-bold mb-5">
-              Sewage Treatment Plant (STP) Solutions
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Sewage Treatment Plant Solutions
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-6">
-              A Sewage Treatment Plant (STP) is a facility designed to
-              treat wastewater generated from residential, commercial,
-              and industrial buildings. The primary purpose of an STP
-              system is to remove contaminants, harmful bacteria, and
-              pollutants from sewage water before it is discharged or
-              reused. Proper wastewater treatment helps protect the
-              environment and ensures safe water management.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Sewage Treatment Plants (STP) are designed to treat
+              wastewater from residential, commercial, and industrial
+              buildings before it is safely reused or discharged.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              STP systems involve multiple treatment processes such as
-              primary treatment, biological treatment, and filtration.
-              These processes help separate solid waste, break down
-              organic matter, and remove harmful microorganisms from
-              wastewater. The treated water can then be reused for
-              irrigation, landscaping, flushing systems, or safely
-              discharged into drainage systems.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-6">
-              Efficient Wastewater Management
-            </h3>
-
-           
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Modern sewage treatment plants use advanced technologies
-              such as aeration systems, membrane filtration, and
-              biological reactors to ensure efficient treatment of
-              wastewater. These technologies help improve water quality
-              while minimizing environmental impact.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              STP systems are widely used in residential societies,
-              commercial complexes, hotels, hospitals, and industrial
-              facilities where large volumes of wastewater are
-              generated daily. Properly designed treatment systems
-              ensure compliance with environmental regulations and
-              sustainable water management practices.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              These systems remove harmful pollutants, bacteria,
+              and solid waste through biological and filtration
+              processes to improve water quality.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Professional STP installation and maintenance ensure
-              long-term reliability and efficient performance. With
-              proper wastewater treatment systems in place,
-              organizations can reduce environmental pollution,
-              conserve water resources, and promote sustainable
-              infrastructure development.
+              Properly installed STP systems support sustainable
+              water management by reducing pollution and enabling
+              treated water reuse for landscaping, flushing, and
+              irrigation.
             </p>
 
           </div>
 
           {/* SIDEBAR */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Plumbing Systems
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/stp" className="hover:text-orange-500">

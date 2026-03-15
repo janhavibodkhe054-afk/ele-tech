@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const Security = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/security1.jpg"
           alt="Security System"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-white text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Security System
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const Security = () => {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2">
@@ -39,74 +39,43 @@ const Security = () => {
             <img
               src="/security2.jpg"
               alt="Security System Installation"
-              className="w-full rounded-lg mb-8 h-[450px]"
+              className="w-full rounded-lg mb-6 h-[250px] md:h-[380px] object-cover"
             />
 
-            <h2 className="text-3xl font-bold mb-5">
-              Advanced Security System Solutions
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Smart Security System Solutions
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Security systems are essential for protecting homes,
-              offices, commercial buildings, and industrial facilities.
-              These systems are designed to monitor, detect, and prevent
-              unauthorized access or suspicious activities. Modern
-              security systems combine multiple technologies such as
-              motion sensors, alarms, access control systems, and
-              surveillance devices to ensure maximum safety.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Security systems protect homes, offices, and commercial
+              buildings from unauthorized access and potential threats.
+              These systems monitor activities and provide instant
+              alerts in case of suspicious movement.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              A well-designed security system includes intrusion
-              detection devices, control panels, alarm systems, and
-              monitoring software. These systems can automatically
-              trigger alerts when unauthorized entry is detected,
-              helping property owners respond quickly to potential
-              threats and maintain a secure environment.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-6">
-              Reliable Protection & Smart Monitoring
-            </h3>
-
-            
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Modern security systems can be integrated with smart
-              technology that allows users to monitor and control
-              security devices remotely using smartphones or computers.
-              Motion detection, door sensors, alarm notifications,
-              and remote access features help provide real-time
-              security updates and improved control over the system.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Security systems can also be integrated with other
-              building technologies such as CCTV cameras, fire alarm
-              systems, and home automation platforms. This integration
-              creates a complete security infrastructure that improves
-              both safety and operational efficiency.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              A typical system includes motion sensors, alarms,
+              control panels, and monitoring devices designed to
+              detect intrusions and improve overall safety.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Professional installation ensures proper placement of
-              sensors, cameras, and alarm devices to achieve maximum
-              coverage and effectiveness. A reliable security system
-              helps prevent theft, protect valuable assets, and provide
-              peace of mind for homeowners and business owners.
+              Modern systems can be monitored remotely through mobile
+              devices, allowing users to stay connected and maintain
+              complete control over their security infrastructure.
             </p>
 
           </div>
 
           {/* SIDEBAR */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Systems
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/home-automation" className="hover:text-orange-500">

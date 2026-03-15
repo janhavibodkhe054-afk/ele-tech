@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const ElectricalTurnkey = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* ================= HERO BANNER ================= */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/turnkey1.webp"
           alt="Electrical Turnkey Projects"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-center text-white px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Electrical Turnkey Projects
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const ElectricalTurnkey = () => {
       </section>
 
       {/* ================= MAIN CONTENT ================= */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* ================= LEFT CONTENT ================= */}
           <div className="lg:col-span-2">
@@ -40,86 +40,45 @@ const ElectricalTurnkey = () => {
             <img
               src="/turnkey2.jpg"
               alt="Electrical Turnkey Work"
-              className="rounded-lg mb-8 w-full h-[400px]"
+              className="rounded-lg mb-6 w-full h-[250px] md:h-[400px] object-cover"
             />
 
             {/* Title */}
-            <h2 className="text-3xl font-bold mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Electrical Turnkey Projects
             </h2>
 
-            {/* Paragraphs */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Electrical turnkey projects involve delivering complete electrical
-              infrastructure solutions from initial design and planning to final
-              installation and commissioning. In turnkey projects, the electrical
-              contractor takes full responsibility for the entire project
-              lifecycle, ensuring that the electrical system is delivered ready
-              for operation. These projects are commonly implemented in
-              commercial buildings, industrial facilities, residential
-              complexes, infrastructure developments, and large-scale
-              construction projects.
+            {/* Short Content */}
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Electrical turnkey projects provide complete electrical
+              solutions from design and planning to installation and final
+              commissioning. Our team handles the entire project to ensure
+              efficient and reliable power systems.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              The turnkey approach simplifies project management for clients
-              because all electrical services are handled by a single provider.
-              This includes electrical design, procurement of materials,
-              installation of wiring systems, switchboards, transformers,
-              lighting systems, and electrical panels. Professional engineers
-              carefully plan the electrical network to ensure efficient power
-              distribution, operational reliability, and compliance with
-              electrical safety standards.
-            </p>
-
-            {/* ================= HEADING ================= */}
-            <h3 className="text-2xl font-semibold mb-6">
-              Complete Electrical Design, Installation & Commissioning
-            </h3>
-
-
-            {/* More Info */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Turnkey electrical projects typically begin with detailed
-              engineering design and load analysis. Electrical engineers create
-              system layouts for cable routing, power distribution, lighting
-              systems, and equipment connections. High-quality electrical
-              components such as transformers, switchgear, distribution panels,
-              cable trays, and protection systems are selected to ensure safe
-              and reliable operation.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              During the installation phase, experienced electricians install
-              electrical wiring, power distribution panels, control systems, and
-              lighting networks across the project site. Advanced electrical
-              systems such as automation controls, backup power solutions,
-              energy monitoring systems, and safety protection devices may also
-              be integrated depending on project requirements.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Services include electrical design, wiring systems, distribution
+              panels, transformers, lighting systems, and power management for
+              commercial, industrial, and residential developments.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Once installation is complete, comprehensive testing and
-              commissioning are conducted to verify the performance and safety
-              of the entire electrical system. Engineers test voltage levels,
-              load capacity, circuit protection, and system reliability before
-              handing over the completed project. Electrical turnkey solutions
-              provide clients with efficient project execution, reduced
-              coordination challenges, and a fully operational electrical system
-              ready for immediate use.
+              With proper testing, safety standards, and modern electrical
+              technology, we deliver ready-to-operate electrical systems that
+              ensure long-term performance and operational reliability.
             </p>
 
           </div>
 
           {/* ================= RIGHT SIDEBAR ================= */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Services
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/commercial-electrical-installation" className="hover:text-orange-500">

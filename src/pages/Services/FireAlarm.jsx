@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const FireAlarm = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/fire1.jpg"
           alt="Fire Alarm System"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-white text-center px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Fire Alarm System
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const FireAlarm = () => {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2">
@@ -39,75 +39,43 @@ const FireAlarm = () => {
             <img
               src="/fire2.jpg"
               alt="Fire Alarm Installation"
-              className="w-full rounded-lg mb-8 h-[450px]"
+              className="w-full rounded-lg mb-6 h-[250px] md:h-[380px] object-cover"
             />
 
-            <h2 className="text-3xl font-bold mb-5">
-              Advanced Fire Alarm System Installation
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Reliable Fire Alarm Protection
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-6">
-              A fire alarm system is a crucial safety solution designed
-              to detect fire hazards and alert occupants of a building
-              in case of an emergency. These systems use smoke detectors,
-              heat sensors, and alarm devices to quickly identify
-              potential fire threats and trigger warning signals.
-              Fire alarm systems are widely used in residential
-              buildings, offices, factories, hospitals, shopping malls,
-              and public facilities to ensure maximum safety.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Fire alarm systems detect smoke or heat and instantly
+              alert building occupants during a fire emergency.
+              These systems are essential for homes, offices,
+              factories, and public buildings.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              A typical fire alarm system includes smoke detectors,
-              heat detectors, manual call points, alarm bells, control
-              panels, and notification devices. When smoke or excessive
-              heat is detected, the system activates alarms that notify
-              occupants to evacuate the building immediately and alert
-              emergency services if necessary.
-            </p>
-
-            <h3 className="text-2xl font-semibold mb-6">
-              Reliable Fire Detection & Safety Protection
-            </h3>
-
-           
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Modern fire alarm systems are designed with advanced
-              technologies that provide faster detection and improved
-              reliability. Addressable fire alarm systems can identify
-              the exact location of a fire, allowing emergency teams
-              to respond quickly and effectively.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Fire alarm systems can also be integrated with other
-              safety systems such as public address systems, emergency
-              lighting, and building management systems. This integration
-              allows automatic evacuation announcements and coordinated
-              emergency responses during fire incidents.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              A typical system includes smoke detectors, heat sensors,
+              alarm panels, and warning devices that provide early
+              alerts and help people evacuate safely.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Professional installation and regular maintenance of fire
-              alarm systems ensure reliable performance and compliance
-              with safety regulations. A well-designed fire detection
-              system helps protect lives, property, and critical
-              infrastructure by providing early warnings and efficient
-              emergency communication.
+              Professional installation ensures reliable detection,
+              quick response, and compliance with safety standards,
+              protecting both lives and property.
             </p>
 
           </div>
 
           {/* SIDEBAR */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Systems
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/home-automation" className="hover:text-orange-500">

@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const Solar = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* ================= HERO BANNER ================= */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/solar2.webp"
           alt="Solar System Installation"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-center text-white px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Solar System Installation
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const Solar = () => {
       </section>
 
       {/* ================= MAIN CONTENT ================= */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* ================= LEFT CONTENT ================= */}
           <div className="lg:col-span-2">
@@ -40,88 +40,45 @@ const Solar = () => {
             <img
               src="/solar2.jpg"
               alt="Solar Panel Installation"
-              className="rounded-lg mb-8 w-full h-[450px]"
+              className="rounded-lg mb-6 w-full h-[250px] md:h-[400px] object-cover"
             />
 
             {/* Title */}
-            <h2 className="text-3xl font-bold mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Solar System Installation
             </h2>
 
-            {/* Paragraph */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Solar system installation involves setting up photovoltaic
-              (PV) panels and related electrical components to generate
-              electricity using sunlight. Solar energy systems are widely
-              used in residential homes, commercial buildings, industrial
-              facilities, and agricultural properties to reduce electricity
-              costs and promote sustainable energy use. A properly designed
-              solar system converts sunlight into usable electrical energy
-              that can power lighting, appliances, and other electrical
-              equipment.
+            {/* Short Content */}
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Solar system installation allows homes and businesses to
+              generate electricity using sunlight. Solar panels convert
+              solar energy into usable power for lighting, appliances,
+              and electrical systems.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              The installation process begins with site assessment and
-              energy requirement analysis. Engineers evaluate roof space,
-              sunlight exposure, and energy consumption patterns to design
-              the most efficient solar power system. Based on these
-              calculations, solar panels, inverters, mounting structures,
-              and electrical wiring systems are selected to ensure optimal
-              energy generation and performance.
-            </p>
-
-            {/* ================= HEADING ================= */}
-            <h3 className="text-2xl font-semibold mb-6">
-              Solar Panel Integration & Energy Management
-            </h3>
-
-            
-
-            {/* More Info */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              During installation, solar panels are mounted on rooftops
-              or ground-mounted structures at angles that maximize sunlight
-              absorption throughout the day. Electrical wiring connects the
-              panels to solar inverters, which convert the generated direct
-              current (DC) electricity into alternating current (AC)
-              suitable for powering buildings and electrical equipment.
-              Proper installation ensures safe and efficient energy
-              conversion.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Modern solar systems may also include energy storage
-              batteries, smart energy monitoring systems, and grid-tied
-              connections. Grid-connected systems allow excess electricity
-              generated by solar panels to be sent back to the utility grid,
-              helping reduce electricity bills and improve energy
-              efficiency. These systems provide reliable power while
-              supporting environmentally friendly energy practices.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Our team provides professional solar installation including
+              panel mounting, inverter setup, wiring, and system integration
+              to ensure maximum energy efficiency.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Safety and system efficiency are essential aspects of solar
-              installation. Professional installers ensure proper grounding,
-              surge protection, and electrical safety compliance. After
-              installation, the entire solar system is tested to verify
-              performance, voltage stability, and energy output. A
-              professionally installed solar energy system provides
-              long-term savings, reduces carbon footprint, and offers a
-              sustainable source of electricity for homes and businesses.
+              With proper safety standards and modern technology, solar
+              systems reduce electricity costs and provide a reliable,
+              eco-friendly energy solution for long-term use.
             </p>
 
           </div>
 
           {/* ================= RIGHT SIDEBAR ================= */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Services
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/commercial-electrical-installation" className="hover:text-orange-500">

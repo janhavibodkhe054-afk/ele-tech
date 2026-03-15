@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const Lighting = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
 
       {/* ================= HERO BANNER ================= */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center">
+      <section className="relative w-full h-[35vh] md:h-[40vh] flex items-center justify-center">
         <img
           src="/light1.jpg"
           alt="Lighting Contractors"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative text-center text-white px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold mb-2">
             Lighting Contractors
           </h1>
 
-          <p className="text-sm md:text-lg">
+          <p className="text-sm md:text-base">
             <Link to="/" className="hover:text-orange-400">
               Home
             </Link>{" "}
@@ -30,8 +30,8 @@ const Lighting = () => {
       </section>
 
       {/* ================= MAIN CONTENT ================= */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-3 gap-10">
 
           {/* ================= LEFT CONTENT ================= */}
           <div className="lg:col-span-2">
@@ -40,89 +40,46 @@ const Lighting = () => {
             <img
               src="/light2.webp"
               alt="Lighting Installation"
-              className="rounded-lg mb-8 w-full h-[400px]"
+              className="rounded-lg mb-6 w-full h-[250px] md:h-[380px] object-cover"
             />
 
             {/* Title */}
-            <h2 className="text-3xl font-bold mb-5">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Lighting Contractors
             </h2>
 
-            {/* Paragraph */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Lighting contractors specialize in the design, installation,
-              and maintenance of lighting systems for residential,
-              commercial, and industrial environments. Proper lighting
-              plays an important role in improving visibility, enhancing
-              building aesthetics, increasing productivity, and ensuring
-              safety in indoor and outdoor spaces. Professional lighting
-              contractors provide customized lighting solutions that meet
-              both functional and decorative requirements.
+            {/* Short Content */}
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Lighting contractors design and install efficient lighting
+              systems for residential, commercial, and industrial spaces.
+              Proper lighting improves visibility, safety, and the overall
+              appearance of buildings.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
-              Lighting installations include a wide range of systems such
-              as interior lighting, exterior lighting, architectural
-              lighting, landscape lighting, street lighting, and security
-              lighting. Contractors evaluate the building structure and
-              lighting requirements before designing an efficient lighting
-              layout. Modern lighting systems often incorporate LED
-              technology, which offers higher energy efficiency, longer
-              lifespan, and reduced electricity consumption.
-            </p>
-
-            {/* ================= HEADING ================= */}
-            <h3 className="text-2xl font-semibold mb-6">
-              Energy-Efficient Lighting Design & Installation
-            </h3>
-
-          
-
-            {/* More Info */}
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Professional lighting contractors install a variety of
-              lighting fixtures including LED panels, downlights,
-              floodlights, decorative lights, and outdoor lighting
-              systems. These systems are carefully connected to the
-              electrical network using proper wiring methods and control
-              switches to ensure smooth and safe operation. Lighting
-              systems can also be integrated with automation controls
-              that allow users to manage brightness, schedules, and
-              energy usage efficiently.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Outdoor lighting installations are particularly important
-              for pathways, gardens, parking areas, and building
-              exteriors. These systems improve safety and security by
-              providing adequate illumination in dark areas. Weather-
-              resistant fixtures and protected electrical connections
-              are used to ensure durability and long-term performance
-              in outdoor environments.
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Our services include indoor lighting, outdoor lighting,
+              landscape lighting, and energy-efficient LED installations.
+              Every system is carefully designed to provide maximum
+              brightness with minimal energy consumption.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              After installation, lighting systems are tested to ensure
-              proper illumination levels, electrical safety, and energy
-              efficiency. Professional lighting contractors also provide
-              maintenance services to ensure that lighting fixtures and
-              electrical connections continue to perform efficiently
-              over time. Well-planned lighting solutions enhance the
-              functionality, appearance, and safety of buildings and
-              outdoor spaces.
+              We ensure safe wiring, quality fixtures, and professional
+              installation so that lighting systems operate efficiently
+              and reliably for many years.
             </p>
 
           </div>
 
           {/* ================= RIGHT SIDEBAR ================= */}
           <div>
-            <div className="bg-gray-100 p-8 rounded-lg">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
 
-              <h3 className="text-xl font-bold mb-6 border-b pb-3">
+              <h3 className="text-lg md:text-xl font-bold mb-6 border-b pb-3">
                 Electrical Services
               </h3>
 
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-3 text-gray-700 text-sm md:text-base">
 
                 <li>
                   <Link to="/commercial-electrical-installation" className="hover:text-orange-500">
