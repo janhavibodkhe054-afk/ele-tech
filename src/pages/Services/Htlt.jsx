@@ -49,7 +49,7 @@ const Htlt = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               HT-LT cable laying is used to safely transmit and distribute
               electricity across residential, commercial, and industrial
               facilities. High tension cables carry power over long distances,
@@ -57,13 +57,13 @@ const Htlt = () => {
               equipment.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our team provides professional cable installation using
               underground trenching, cable trays, conduits, and protective
               systems to ensure safe and reliable power transmission.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               After installation, we perform proper testing and inspection to
               ensure electrical safety, efficient power distribution, and
               long-term system reliability.

@@ -62,13 +62,13 @@ const WhoHome = () => {
               Industrial Solutions
             </h2>
 
-            <p className="mt-4 text-gray-500 leading-relaxed text-sm sm:text-base">
+            <p className="mt-4 text-gray-500 leading-relaxed text-sm sm:text-base text-justify">
               ELE-TECH Engineering Solutions was founded in Pune in 2018 as an
               engineering firm delivering turnkey projects for the automobile
               industry.
             </p>
 
-            <p className="mt-3 text-gray-500 leading-relaxed text-sm sm:text-base">
+            <p className="mt-3 text-gray-500 leading-relaxed text-sm sm:text-base text-justify">
               What began as a focused initiative quickly evolved into a
               specialist organization offering comprehensive industrial
               electrical and mechanical solutions.

@@ -54,11 +54,11 @@ const WhatWeLookFor = () => {
             Join Our Engineering Team
           </p>
 
-          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold max-w-2xl leading-tight">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold max-w-2xl leading-tight text-justify">
             Building Excellence Through Skilled & Passionate Professionals
           </h2>
 
-          <p className="mt-4 max-w-xl text-sm sm:text-base text-white">
+          <p className="mt-4 max-w-xl text-sm sm:text-base text-white text-justify">
             At ELE-TECH Engineering Solutions, we believe innovation starts
             with people. We look for individuals who combine technical
             knowledge, safety awareness, and dedication to deliver reliable

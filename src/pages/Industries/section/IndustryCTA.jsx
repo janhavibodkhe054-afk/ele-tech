@@ -14,7 +14,7 @@ const IndustryCTA = () => {
       <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-down">
         Ready to Transform Your Industry?
       </h2>
-      <p className="mb-8 text-lg md:text-xl" data-aos="fade-up">
+      <p className="mb-8 text-lg md:text-xl text-justify" data-aos="fade-up">
         Contact Ele-Tech Engineering Solutions today and discuss your project with our experts.
       </p>
       <a

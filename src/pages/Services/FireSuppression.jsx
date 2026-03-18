@@ -50,7 +50,7 @@ const FireSuppression = () => {
             </h2>
 
             {/* Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A fire suppression system is an advanced fire protection solution
               designed to detect and automatically extinguish fires before they
               spread. Unlike traditional fire fighting systems that rely on
@@ -58,7 +58,7 @@ const FireSuppression = () => {
               release specialized agents to control flames quickly and safely.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               These systems are commonly used in server rooms, industrial
               facilities, commercial kitchens, warehouses, and data centers
               where sensitive equipment or materials require rapid fire control.

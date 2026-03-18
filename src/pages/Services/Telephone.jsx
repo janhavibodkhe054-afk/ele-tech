@@ -46,20 +46,20 @@ const Telephone = () => {
               Telephone & Data Communication Systems
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Telephone and data systems provide reliable communication
               and internet connectivity for homes, offices, and
               commercial buildings. These systems support voice calls,
               networking, and digital data transfer.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justifyv">
               Our services include structured cabling, network
               installation, data outlets, switches, and communication
               racks to ensure stable and high-speed connectivity.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               A properly designed communication network improves
               productivity, ensures secure data transfer, and allows
               easy expansion as technology and connectivity needs grow.

@@ -50,20 +50,20 @@ const Industrial = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Industrial electrical installation involves designing and
               installing electrical systems for factories, manufacturing
               plants, and heavy industrial facilities. These systems handle
               high power loads required for machinery and automated equipment.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our services include power distribution panels, cable tray
               systems, motor control centers, transformers, and industrial
               wiring solutions to ensure stable and efficient power supply.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With proper safety standards, grounding systems, and electrical
               protection devices, we deliver reliable installations that keep
               industrial operations running smoothly and safely.

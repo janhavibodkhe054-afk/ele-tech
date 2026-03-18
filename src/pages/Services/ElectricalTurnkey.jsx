@@ -49,20 +49,20 @@ const ElectricalTurnkey = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Electrical turnkey projects provide complete electrical
               solutions from design and planning to installation and final
               commissioning. Our team handles the entire project to ensure
               efficient and reliable power systems.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Services include electrical design, wiring systems, distribution
               panels, transformers, lighting systems, and power management for
               commercial, industrial, and residential developments.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With proper testing, safety standards, and modern electrical
               technology, we deliver ready-to-operate electrical systems that
               ensure long-term performance and operational reliability.

@@ -46,20 +46,20 @@ const Domestic = () => {
               Reliable Domestic Water Supply Systems
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Domestic water supply systems provide clean and safe
               water to homes, apartments, and residential complexes
               for daily activities such as drinking, cooking,
               bathing, and cleaning.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               These systems include storage tanks, pumps, pipelines,
               and filtration units that ensure smooth water flow
               and proper distribution throughout the building.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Professional installation ensures efficient water
               pressure, reduced leakage, and reliable water supply
               for long-term residential use.

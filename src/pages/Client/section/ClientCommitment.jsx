@@ -29,7 +29,7 @@ const ClientCommitment = () => {
 
         <div className="w-20 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
 
-        <p className="text-gray-600 mt-6 max-w-3xl mx-auto text-sm md:text-lg">
+        <p className="text-gray-600 mt-6 max-w-3xl mx-auto text-sm md:text-lg text-justify">
           We proudly serve leading organizations across industrial,
           infrastructure, and energy sectors by delivering reliable
           electro-mechanical and engineering solutions with safety,
@@ -79,7 +79,7 @@ const ClientCommitment = () => {
             Building Long-Term Industrial Relationships
           </h3>
 
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-sm md:text-base">
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-sm md:text-base text-justify">
             Our commitment to quality engineering, project efficiency,
             and strict safety compliance has earned us the trust of
             prestigious industrial clients. We focus on delivering

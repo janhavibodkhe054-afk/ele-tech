@@ -50,7 +50,7 @@ const FireHydrant = () => {
             </h2>
 
             {/* Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A fire hydrant system is a crucial fire protection solution that
               provides a reliable water supply for controlling and extinguishing
               fires in buildings, factories, warehouses, and commercial
@@ -61,7 +61,7 @@ const FireHydrant = () => {
 
            
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Our fire hydrant system services include professional design,
               installation, testing, and maintenance in compliance with fire
               safety standards. We ensure reliable pump systems, proper pipeline

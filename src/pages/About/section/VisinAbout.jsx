@@ -45,7 +45,7 @@ const VisionAbout = () => {
               Our Vision
             </h3>
 
-            <p className="text-black leading-relaxed text-sm sm:text-base">
+            <p className="text-black leading-relaxed text-sm sm:text-base text-justify">
               To be a trusted engineering partner delivering high-quality
               turnkey electrical and mechanical solutions that drive
               sustainable industrial growth through innovation and reliability.
@@ -73,7 +73,7 @@ const VisionAbout = () => {
               Our Mission
             </h3>
 
-            <p className="text-black leading-relaxed text-sm sm:text-base">
+            <p className="text-black leading-relaxed text-sm sm:text-base text-justify">
               To provide customized, process-driven engineering solutions by
               bridging planning and execution while ensuring uncompromised
               quality, safety, and reliability for long-term success.

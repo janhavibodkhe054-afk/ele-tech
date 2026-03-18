@@ -50,7 +50,7 @@ const HeatingCooling = () => {
             </h2>
 
             {/* Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Heating and cooling systems, commonly known as HVAC systems
               (Heating, Ventilation, and Air Conditioning), are essential for
               maintaining comfortable indoor temperatures and proper air
@@ -59,7 +59,7 @@ const HeatingCooling = () => {
               create a healthy indoor environment.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               HVAC systems include components such as air conditioners,
               heaters, chillers, ventilation ducts, air handling units,
               compressors, and thermostats. Properly designed systems improve

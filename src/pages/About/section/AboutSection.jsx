@@ -42,7 +42,7 @@ const AboutSection = () => {
             <span className="text-orange-500"> Precision & Innovation</span>
           </h2>
 
-          <p className="text-gray-700 leading-relaxed mb-4">
+          <p className="text-gray-700 leading-relaxed mb-4 text-justify">
             Founded in <span className="font-semibold text-blue-700">2018</span>,
             ELE-TECH Engineering Solutions delivers high-quality
             <span className="font-semibold text-blue-700">
@@ -51,7 +51,7 @@ const AboutSection = () => {
             for industrial, commercial, and infrastructure projects.
           </p>
 
-          <p className="text-gray-700 leading-relaxed mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8 text-justify">
             Our process-driven approach bridges the gap between planning and
             execution, ensuring seamless delivery with uncompromised quality,
             safety, and reliability.
@@ -79,7 +79,7 @@ const AboutSection = () => {
             <h4 className="text-lg font-semibold mb-2">
               Quality in Everything… We DO…!
             </h4>
-            <p className="leading-relaxed text-sm sm:text-base">
+            <p className="leading-relaxed text-sm sm:text-base text-justify">
               Quality, safety, and long-term performance are embedded into every
               stage of execution, driving sustainable industrial growth.
             </p>

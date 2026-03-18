@@ -49,20 +49,20 @@ const Farmhouse = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Farmhouse electrical installation includes designing safe and
               reliable electrical systems for rural homes and agricultural
               properties. These systems power lighting, appliances, irrigation
               pumps, and outdoor equipment across large farmhouse areas.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our team installs wiring networks, distribution boards,
               weatherproof outdoor connections, and efficient lighting systems
               to ensure smooth power supply throughout the property.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               We also provide energy-efficient solutions like solar systems and
               proper grounding to ensure safety, durability, and reliable
               electricity for both residential comfort and agricultural use.

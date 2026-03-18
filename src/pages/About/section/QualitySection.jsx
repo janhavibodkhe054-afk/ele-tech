@@ -35,7 +35,7 @@ const QualitySection = () => {
         <p
           data-aos="fade-up"
           data-aos-delay="150"
-          className="text-blue-100 mt-4 sm:mt-6 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base md:text-lg"
+          className="text-blue-100 mt-4 sm:mt-6 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base md:text-lg text-justify"
         >
           At ELE-TECH Engineering Solutions, quality is not just a process —
           it is a commitment embedded in every stage of execution. From
@@ -55,7 +55,7 @@ const QualitySection = () => {
             <h4 className="text-white font-semibold mt-3 sm:mt-4 text-lg sm:text-xl">
               Precision Execution
             </h4>
-            <p className="text-blue-200 text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed">
+            <p className="text-blue-200 text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed text-justify">
               Every project follows structured processes ensuring accuracy,
               durability, and operational efficiency.
             </p>
@@ -69,7 +69,7 @@ const QualitySection = () => {
             <h4 className="text-white font-semibold mt-3 sm:mt-4 text-lg sm:text-xl">
               Engineering Excellence
             </h4>
-            <p className="text-blue-200 text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed">
+            <p className="text-blue-200 text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed text-justify">
               Combining technical expertise with modern engineering practices
               to deliver dependable industrial solutions.
             </p>
@@ -83,7 +83,7 @@ const QualitySection = () => {
             <h4 className="text-white font-semibold mt-3 sm:mt-4 text-lg sm:text-xl">
               Safety & Reliability
             </h4>
-            <p className="text-blue-200 text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed">
+            <p className="text-blue-200 text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed text-justify">
               Safety and long-term performance remain core priorities in all
               electrical and mechanical implementations.
             </p>

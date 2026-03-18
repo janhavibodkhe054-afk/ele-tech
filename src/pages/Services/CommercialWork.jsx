@@ -49,7 +49,7 @@ const CommercialWork = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Commercial electrical works include installation and
               maintenance of electrical systems in offices, retail
               stores, hotels, and commercial buildings. These systems
@@ -57,14 +57,14 @@ const CommercialWork = () => {
               business operations.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our services include electrical wiring, distribution
               panels, lighting systems, and power management solutions
               designed to provide safe and efficient electricity
               distribution throughout the facility.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With proper safety standards and professional installation,
               commercial electrical systems operate reliably while
               reducing energy consumption and ensuring long-term

@@ -46,19 +46,19 @@ const Drainage = () => {
               Efficient Plumbing Drainage Systems
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Plumbing drainage systems safely remove wastewater from
               kitchens, bathrooms, and other areas of residential and
               commercial buildings.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               These systems include drainage pipes, floor traps,
               vents, and inspection chambers that ensure smooth
               wastewater flow without blockages.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Professional installation ensures proper slope,
               efficient drainage, and long-term reliability for
               healthy and hygienic building environments.

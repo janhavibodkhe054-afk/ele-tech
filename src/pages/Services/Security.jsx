@@ -46,20 +46,20 @@ const Security = () => {
               Smart Security System Solutions
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Security systems protect homes, offices, and commercial
               buildings from unauthorized access and potential threats.
               These systems monitor activities and provide instant
               alerts in case of suspicious movement.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A typical system includes motion sensors, alarms,
               control panels, and monitoring devices designed to
               detect intrusions and improve overall safety.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Modern systems can be monitored remotely through mobile
               devices, allowing users to stay connected and maintain
               complete control over their security infrastructure.

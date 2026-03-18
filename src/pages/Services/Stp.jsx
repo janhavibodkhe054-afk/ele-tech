@@ -46,19 +46,19 @@ const Stp = () => {
               Sewage Treatment Plant Solutions
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Sewage Treatment Plants (STP) are designed to treat
               wastewater from residential, commercial, and industrial
               buildings before it is safely reused or discharged.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               These systems remove harmful pollutants, bacteria,
               and solid waste through biological and filtration
               processes to improve water quality.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Properly installed STP systems support sustainable
               water management by reducing pollution and enabling
               treated water reuse for landscaping, flushing, and

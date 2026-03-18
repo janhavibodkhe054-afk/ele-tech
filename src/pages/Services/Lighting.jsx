@@ -49,21 +49,21 @@ const Lighting = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Lighting contractors design and install efficient lighting
               systems for residential, commercial, and industrial spaces.
               Proper lighting improves visibility, safety, and the overall
               appearance of buildings.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our services include indoor lighting, outdoor lighting,
               landscape lighting, and energy-efficient LED installations.
               Every system is carefully designed to provide maximum
               brightness with minimal energy consumption.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               We ensure safe wiring, quality fixtures, and professional
               installation so that lighting systems operate efficiently
               and reliably for many years.

@@ -49,20 +49,20 @@ const Solar = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Solar system installation allows homes and businesses to
               generate electricity using sunlight. Solar panels convert
               solar energy into usable power for lighting, appliances,
               and electrical systems.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our team provides professional solar installation including
               panel mounting, inverter setup, wiring, and system integration
               to ensure maximum energy efficiency.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With proper safety standards and modern technology, solar
               systems reduce electricity costs and provide a reliable,
               eco-friendly energy solution for long-term use.

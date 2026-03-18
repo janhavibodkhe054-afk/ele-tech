@@ -49,21 +49,21 @@ const Residential = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Residential electrical installation includes wiring,
               lighting systems, power outlets, and electrical panels
               used in homes and apartments. These systems provide safe
               and reliable electricity for daily household activities.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our electricians design efficient electrical layouts and
               install high-quality wiring, switches, circuit breakers,
               and distribution boards to ensure smooth power flow
               throughout the home.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With proper grounding, circuit protection, and modern
               electrical solutions, residential installations provide
               safe operation, energy efficiency, and long-term

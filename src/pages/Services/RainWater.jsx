@@ -46,20 +46,20 @@ const RainWater = () => {
               Rain Water Harvesting Systems
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Rainwater harvesting systems collect and store rainwater
               for reuse in irrigation, groundwater recharge, and
               domestic purposes. These systems help conserve water
               and reduce dependency on external water sources.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A typical system includes rooftop collection, gutters,
               filtration units, and storage tanks that safely store
               rainwater for future use.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Proper installation ensures efficient water collection,
               sustainable water management, and long-term reliability
               for residential and commercial buildings.

@@ -46,19 +46,19 @@ const PublicAdrress = () => {
               Professional Public Address Systems
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Public Address (PA) systems are designed to deliver clear
               announcements and audio communication across large
               buildings, campuses, factories, and public areas.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               These systems include microphones, amplifiers, speakers,
               and control units that distribute sound effectively
               throughout the facility.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               A professionally installed PA system ensures clear sound
               coverage, reliable communication, and improved safety
               during daily operations or emergency situations.

@@ -46,20 +46,20 @@ const FireAlarm = () => {
               Reliable Fire Alarm Protection
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Fire alarm systems detect smoke or heat and instantly
               alert building occupants during a fire emergency.
               These systems are essential for homes, offices,
               factories, and public buildings.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A typical system includes smoke detectors, heat sensors,
               alarm panels, and warning devices that provide early
               alerts and help people evacuate safely.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Professional installation ensures reliable detection,
               quick response, and compliance with safety standards,
               protecting both lives and property.

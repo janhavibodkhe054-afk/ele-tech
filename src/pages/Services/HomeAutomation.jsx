@@ -46,20 +46,20 @@ const HomeAutomation = () => {
               Smart Home Automation Solutions
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Home automation allows homeowners to control lighting,
               appliances, security systems, and climate settings
               automatically or remotely using smartphones or smart
               control panels.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our smart automation systems integrate lighting control,
               smart switches, door locks, and security devices to create
               a connected and energy-efficient home environment.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With professional installation and advanced technology,
               home automation improves comfort, security, and energy
               efficiency while providing convenient control of your

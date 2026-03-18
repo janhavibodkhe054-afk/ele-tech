@@ -50,7 +50,7 @@ const IndustrialExhaust = () => {
             </h2>
 
             {/* Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Industrial exhaust systems are designed to remove heat, smoke,
               fumes, dust, and harmful gases from factories and industrial
               facilities. These systems help maintain a safe and comfortable
@@ -58,7 +58,7 @@ const IndustrialExhaust = () => {
               ventilation inside production areas.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               An effective exhaust system includes ducting, exhaust fans,
               blowers, air filters, and ventilation units that work together to
               extract contaminated air and replace it with fresh airflow. This

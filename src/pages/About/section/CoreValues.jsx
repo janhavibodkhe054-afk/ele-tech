@@ -26,7 +26,7 @@ const CoreValues = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base"
+            className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base text-justify"
           >
             Our values define how we work, deliver, and build long-term
             partnerships. Every project is executed with responsibility,
@@ -44,7 +44,7 @@ const CoreValues = () => {
                 <h4 className="font-semibold text-blue-900 text-sm sm:text-base">
                   Quality First
                 </h4>
-                <p className="text-gray-600 text-xs sm:text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm text-justify">
                   No compromise at any stage of execution.
                 </p>
               </div>
@@ -58,7 +58,7 @@ const CoreValues = () => {
                 <h4 className="font-semibold text-blue-900 text-sm sm:text-base">
                   Customer Focus
                 </h4>
-                <p className="text-gray-600 text-xs sm:text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm text-justify">
                   Solutions tailored to client needs.
                 </p>
               </div>

@@ -50,7 +50,7 @@ const BuildingManagement = () => {
             </h2>
 
             {/* Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A Building Management System (BMS) is an advanced automation
               system used to monitor and control various mechanical,
               electrical, and safety systems within a building. It integrates
@@ -59,7 +59,7 @@ const BuildingManagement = () => {
               efficient building operations.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               By using smart sensors, controllers, and software interfaces,
               a BMS allows facility managers to monitor building performance,
               control energy usage, and respond quickly to system alerts or

@@ -46,20 +46,20 @@ const Cctv = () => {
               CCTV Surveillance Solutions
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               CCTV systems provide continuous monitoring for homes,
               offices, and commercial buildings. Cameras record and
               display real-time video to improve security and prevent
               unauthorized activities.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               A typical system includes surveillance cameras, DVR/NVR
               recording units, monitors, and storage devices to
               capture and manage video footage effectively.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Modern CCTV systems allow remote viewing through mobile
               devices, giving property owners 24/7 access to monitor
               their premises from anywhere.

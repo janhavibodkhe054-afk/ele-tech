@@ -50,7 +50,7 @@ const Commercial = () => {
             </h2>
 
             {/* Short Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Commercial electrical installation includes designing and
               installing complete electrical systems for offices, malls,
               hospitals, hotels, and other commercial buildings. These systems
@@ -58,13 +58,13 @@ const Commercial = () => {
               security systems, and daily operations.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our team provides safe wiring solutions, panel installations,
               cable management, and energy-efficient lighting systems to improve
               performance and reduce electricity consumption.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               With proper safety standards, earthing systems, and testing
               procedures, we ensure long-lasting electrical infrastructure that
               supports smooth and uninterrupted business operations.

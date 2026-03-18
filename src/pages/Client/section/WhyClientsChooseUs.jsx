@@ -29,7 +29,7 @@ const WhyClientsChooseUs = () => {
             <span className="text-orange-500">That Clients Trust</span>
           </h2>
 
-          <p className="mt-6 text-gray-600 text-sm md:text-base max-w-lg">
+          <p className="mt-6 text-gray-600 text-sm md:text-base max-w-lg text-justify">
             We combine technical capability, safety compliance, and
             disciplined project execution to deliver reliable industrial
             solutions across sectors.

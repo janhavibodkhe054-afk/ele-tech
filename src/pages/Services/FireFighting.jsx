@@ -50,7 +50,7 @@ const FireFighting = () => {
             </h2>
 
             {/* Content */}
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Fire fighting systems are essential safety solutions designed to
               detect, control, and extinguish fires in residential, commercial,
               and industrial buildings. These systems help minimize property
@@ -58,7 +58,7 @@ const FireFighting = () => {
               emergencies.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our fire protection solutions include installation of fire pumps,
               sprinkler systems, fire extinguishers, pipelines, and advanced
               detection systems. We ensure that every system meets safety

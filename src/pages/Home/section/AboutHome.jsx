@@ -52,7 +52,7 @@ export default function AboutHome() {
 
             <div className="flex items-center gap-2 mb-3">
               <Lightbulb className="text-orange-500" size={18} />
-              <p className="text-orange-500 uppercase tracking-[3px] font-semibold text-sm">
+              <p className="text-orange-500 uppercase tracking-[3px] font-semibold text-sm text-justify">
                 About Us
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function AboutHome() {
               <span className="text-orange-500">Quality Service</span>
             </h2>
 
-            <p className="mt-4 sm:mt-6 text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-gray-600 text-sm sm:text-base leading-relaxed text-justify">
               At Ele Tech Engineering we deliver advanced electrical and
               mechanical solutions designed for reliability and performance.
               Our expert team ensures every project meets the highest standards
@@ -79,8 +79,8 @@ export default function AboutHome() {
                   <Zap size={30} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-base sm:text-lg">Electrical</h4>
-                  <p className="text-gray-600 text-xs sm:text-sm">
+                  <h4 className="font-semibold text-base sm:text-lg text-justify">Electrical</h4>
+                  <p className="text-gray-600 text-xs sm:text-sm text-justify">
                     Complete electrical infrastructure and power solutions
                   </p>
                 </div>
@@ -91,8 +91,8 @@ export default function AboutHome() {
                   <Settings size={30} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-base sm:text-lg">Mechanical</h4>
-                  <p className="text-gray-600 text-xs sm:text-sm">
+                  <h4 className="font-semibold text-base sm:text-lg text-justify">Mechanical</h4>
+                  <p className="text-gray-600 text-xs sm:text-sm text-justify">
                     Expert mechanical engineering and industrial systems
                   </p>
                 </div>
@@ -104,17 +104,17 @@ export default function AboutHome() {
 
             <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
 
-              <li className="flex gap-2 items-start">
+              <li className="flex gap-2 items-start text-justify">
                 <span className="text-orange-500 text-lg">✓</span>
                 Building innovative engineering solutions for industries
               </li>
 
-              <li className="flex gap-2 items-start">
+              <li className="flex gap-2 items-start text-justify">
                 <span className="text-orange-500 text-lg">✓</span>
                 Delivering projects with precision and professionalism
               </li>
 
-              <li className="flex gap-2 items-start">
+              <li className="flex gap-2 items-start text-justify">
                 <span className="text-orange-500 text-lg">✓</span>
                 Empowering our team and partners for long-term success
               </li>

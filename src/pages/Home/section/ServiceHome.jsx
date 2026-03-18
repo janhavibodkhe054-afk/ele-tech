@@ -55,7 +55,7 @@ export default function WhatWeDo() {
               Solutions <span className="text-orange-500">We Provide</span>
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base">
+            <p className="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base text-justify">
               Ele-Tech delivers advanced industrial engineering solutions
               designed to support modern manufacturing and infrastructure
               development. With years of experience in electrical,
@@ -63,7 +63,7 @@ export default function WhatWeDo() {
               achieve efficiency, reliability, and long-term performance.
             </p>
 
-            <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+            <p className="text-gray-600 leading-relaxed text-sm sm:text-base text-justify">
               Our expertise includes industrial installation, electrical
               infrastructure development, robotic automation integration,
               and utility piping systems. We work closely with clients

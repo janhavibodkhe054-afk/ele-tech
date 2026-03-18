@@ -93,7 +93,7 @@ const InfoAbout = () => {
 
           <h2
             data-aos="fade-up"
-            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 leading-snug"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 leading-snug text-justify"
           >
             We Help Industries Build Reliable Electrical &
             Mechanical Engineering Solutions
@@ -102,7 +102,7 @@ const InfoAbout = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="150"
-            className="text-gray-600 mt-4 lg:mt-6 leading-relaxed text-sm sm:text-base"
+            className="text-gray-600 mt-4 lg:mt-6 leading-relaxed text-sm sm:text-base text-justify"
           >
             ELE-TECH Engineering Solutions delivers turnkey electrical and
             mechanical engineering solutions tailored to industrial needs.
@@ -127,7 +127,7 @@ const InfoAbout = () => {
                 <h4 className="font-semibold text-blue-900 text-sm lg:text-base">
                   Certified Engineering Approach
                 </h4>
-                <p className="text-gray-600 text-xs sm:text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm text-justify">
                   Process-driven execution ensuring quality, safety,
                   and reliability across every project.
                 </p>
@@ -147,7 +147,7 @@ const InfoAbout = () => {
                 <h4 className="font-semibold text-blue-900 text-sm lg:text-base">
                   Turnkey Project Expertise
                 </h4>
-                <p className="text-gray-600 text-xs sm:text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm text-justify">
                   End-to-end engineering services from design to
                   commissioning and operational support.
                 </p>

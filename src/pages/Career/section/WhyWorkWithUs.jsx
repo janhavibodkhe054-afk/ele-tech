@@ -34,7 +34,7 @@ const WhyWorkWithUs = () => {
               <h3 className="font-semibold text-lg mb-3 text-black">
                 Engineering-Driven Culture
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 ">
                 Work in a technically strong environment focused on precision,
                 safety, and structured execution.
               </p>
@@ -92,7 +92,7 @@ const WhyWorkWithUs = () => {
               <span className="text-black">ELE-TECH Engineering Solutions</span>
             </h2>
 
-            <p className="mt-6 text-base md:text-lg text-gray-800">
+            <p className="mt-6 text-base md:text-lg text-gray-800 text-justify">
               We foster a culture built on integrity, responsibility, and
               engineering discipline. Our teams work on challenging industrial
               projects that enhance long-term professional growth.

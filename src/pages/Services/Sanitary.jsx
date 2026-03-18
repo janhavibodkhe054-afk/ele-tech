@@ -46,20 +46,20 @@ const Sanitary = () => {
               Sanitary Fixture Installation
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Sanitary fixtures such as wash basins, sinks, toilets,
               showers, and faucets are essential components of
               modern plumbing systems in homes and commercial
               buildings.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Proper installation ensures smooth water flow,
               leak-free connections, and efficient drainage
               throughout the plumbing network.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Professional installation improves hygiene,
               reduces maintenance issues, and ensures
               long-lasting performance of bathroom and

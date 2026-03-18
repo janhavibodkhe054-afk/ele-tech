@@ -31,10 +31,8 @@ const HeroHome = () => {
 
   return (
     <div className="w-screen overflow-x-hidden">
-
       {/* HERO SECTION */}
       <section className="relative w-full overflow-hidden overflow-x-hidden">
-
         {/* BACKGROUND SLIDER */}
         {images.map((img, index) => (
           <div
@@ -51,14 +49,12 @@ const HeroHome = () => {
 
         {/* HERO CONTENT */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 min-h-[520px] sm:min-h-[600px] md:min-h-[650px] flex items-center">
-
           <div className="text-white max-w-xl md:max-w-2xl animate-[fadeUp_1s_ease-out]">
-
-            <p className="uppercase tracking-widest text-xs sm:text-sm text-gray-200 mb-2">
+            <p className="uppercase text-xs sm:text-sm text-gray-200 mb-2 text-justify">
               Online · Design · Construction
             </p>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-justify">
               Get Greatest{" "}
               <span className="bg-orange-500 px-2 sm:px-3 py-1 rounded">
                 Service
@@ -67,14 +63,13 @@ const HeroHome = () => {
               From Our Company
             </h1>
 
-            <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg">
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
               Engineering solutions focused on quality, reliability and
               performance. We deliver turnkey mechanical, electrical and
               infrastructure projects tailored to industrial needs.
             </p>
 
             <div className="mt-5 flex flex-col sm:flex-row gap-3">
-
               <button
                 onClick={handleServices}
                 className="bg-orange-500 hover:bg-orange-600 px-5 py-2.5 font-semibold rounded transition"
@@ -88,19 +83,14 @@ const HeroHome = () => {
               >
                 Contact Us →
               </button>
-
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* OVERLAP CARDS */}
       <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 -mt-12 sm:-mt-16 md:-mt-20 overflow-x-hidden">
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 animate-[fadeUp_1.2s_ease-out]">
-
           <div className="bg-white p-6 md:p-8 text-center rounded-lg shadow-lg hover:shadow-2xl transition">
             <h3 className="font-semibold text-base sm:text-lg mb-2">
               Automation Industry
@@ -126,13 +116,11 @@ const HeroHome = () => {
               Real Estate Industry
             </h3>
             <p className="text-gray-600 text-sm">
-              Electrical and infrastructure solutions for modern commercial
-              and residential developments.
+              Electrical and infrastructure solutions for modern commercial and
+              residential developments.
             </p>
           </div>
-
         </div>
-
       </div>
 
       {/* ANIMATIONS */}
@@ -144,7 +132,6 @@ const HeroHome = () => {
           }
         `}
       </style>
-
     </div>
   );
 };
