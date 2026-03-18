@@ -88,7 +88,7 @@ const WhoHome = () => {
                 <div>
                   <p className="text-xs text-gray-400">Call Us Now</p>
                   <p className="font-semibold text-sm sm:text-base">
-                    +91 7007 985 236
+                    +91 9423444184
                   </p>
                 </div>
               </div>
